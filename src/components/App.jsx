@@ -7,14 +7,11 @@ import { Notification } from './Notification/Notification.jsx';
 import { Section } from './Section/Section.jsx'; 
 
 export class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      good:0,
-      neutral: 0,
-      bad: 0,
-    };
-  }
+  state = {
+    good:0,
+    neutral: 0,
+    bad: 0,
+  };
 
   countTotalFeedback = () => {
     return this.state.good + this.state.neutral + this.state.bad;
